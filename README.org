@@ -108,7 +108,7 @@
    #+BEGIN_SRC sh
     mkvirtualenv forums
    #+END_SRC
-   
+
 *** 安装需要的包
     #+BEGIN_SRC python
     pip install -r requirements.txt

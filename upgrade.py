@@ -1,23 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # **************************************************************************
-# Copyright © 2017 jianglin
-# File Name: upgrade.py
-# Author: jianglin
-# Email: xiyang0807@gmail.com
-# Created: 2017-03-29 23:28:43 (CST)
-# Last Update:星期四 2017-5-4 11:22:48 (CST)
-#          By:
-# Description:
-# **************************************************************************
 from datetime import datetime
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-engine1 = create_engine('postgresql://postgres:password@localhost/forums1')
+engine1 = create_engine('mysql://root:root@localhost/mapbbs')
 session1 = sessionmaker(bind=engine1)()
 
-engine2 = create_engine('postgresql://postgres:password@localhost/forums')
+engine2 = create_engine('mysql://root:root@localhost/forums')
 session2 = sessionmaker(bind=engine2)()
 
 
